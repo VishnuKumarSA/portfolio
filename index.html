@@ -1,241 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vishnu Kumar S A — PHP & Laravel Developer</title>
-  <meta name="description" content="PHP Developer with 5+ years in Laravel, CakePHP, CodeIgniter, MySQL, REST APIs, eCommerce & POS systems." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishnu Kumar S A - Backend Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+        
 </head>
+
 <body>
-  <header class="site-header">
-    <nav class="nav">
-      <a href="#" class="logo">VK</a>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact" class="cta">Contact</a>
-      </div>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">VK</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                        <i class="bi bi-moon-stars-fill"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
     </nav>
-  </header>
 
-  <main>
+    <!-- Hero Section -->
     <section class="hero" id="about">
-      <div class="hero-content">
-        <h1 class="title">
-          Hi, I'm Vishnu<span class="accent">.</span><br/>
-          <span class="subtitle">PHP & Laravel Developer</span>
-        </h1>
-        <p class="lead">
-          5+ years building high-performance backends: Laravel, CakePHP, CodeIgniter, MySQL, REST APIs.
-          Strong in POS systems, eCommerce, legacy migration, and SQL optimization.
-        </p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn primary">View projects</a>
-          <a href="#contact" class="btn ghost">Get in touch</a>
-        </div>
-        <div class="hero-meta">
-          <span>Madurai, Tamil Nadu</span>
-          <span>•</span>
-          <a href="mailto:savishnukumar@gmail.com">savishnukumar@gmail.com</a>
-          <span>•</span>
-          <a href="https://linkedin.com/in/vishnu-kumar-s-a-05b718216" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
-      </div>
-      <div class="hero-image">
-        <div class="profile-frame">
-          <div class="profile-placeholder">
-            <div class="avatar-circle">
-              <span class="avatar-text">VK</span>
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-right">
+                <h1>
+                    Hi, I'm<br>
+                    <span class="gradient-text">Vishnu Kumar S A</span>
+                </h1>
+                <p class="hero-subtitle">PHP Developer</p>
+                <p class="hero-description">
+                    Experienced PHP developer specializing in POS systems, eCommerce platforms, and high-performance
+                    backend solutions. Proficient in Laravel, CodeIgniter, CakePHP, and modern API development with a
+                    focus on scalability and optimization.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
             </div>
-            <div class="glow-orb"></div>
-          </div>
+            <div class="hero-image aos-init aos-animate" data-aos="fade-left" data-aos-delay="200" aria-hidden="true">
+                <div class="profile-wrapper">
+                    <div class="profile-circle">
+                        <div class="profile-inner">
+                            <div class="profile-text" aria-hidden="true">VK</div>
+                        </div>
+                    </div>
+
+                    <div class="floating-shapes" aria-hidden="true">
+                        <div class="shape" style="width:90px;height:90px;top:-10px;left:-10px;"></div>
+                        <div class="shape" style="width:70px;height:70px;bottom:-10px;right:-10px;"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section class="section" id="experience">
-      <h2>Experience</h2>
-      <div class="experience-timeline">
-        <article class="exp-card reveal">
-          <div class="exp-header">
-            <div class="exp-title-group">
-              <h3>PHP Programmer</h3>
-              <div class="company-name">Kliotech LLP</div>
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title"><span class="gradient-text">Work Experience</span></h2>
+            <p class="section-subtitle">My professional journey building scalable solutions</p>
+        </div>
+        <div class="experience-grid">
+            <div class="exp-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="exp-header">
+                    <div>
+                        <h3 class="exp-title">PHP Programmer</h3>
+                        <p class="company-name">Kliotech LLP</p>
+                    </div>
+                    <span class="exp-duration">Mar 2024 - Present</span>
+                </div>
+                <ul>
+                    <li>Developed and maintained DiveShop360 POS and inventory management system using CakePHP and
+                        Angular</li>
+                    <li>Built core modules for products, orders, and warehouse management with complex business logic
+                    </li>
+                    <li>Optimized SQL queries for large datasets, improving system performance by 40%</li>
+                    <li>Implemented RESTful APIs for seamless integration with third-party services</li>
+                </ul>
             </div>
-            <div class="exp-meta">
-              <span class="duration">03/2024 — Present</span>
-              <span class="location">Chennai</span>
-            </div>
-          </div>
-          <ul class="exp-list">
-            <li>Developed and maintained DiveShop360 POS & inventory (CakePHP & Angular), improving stability by 20%.</li>
-            <li>Designed backend logic for product, sales, and order management modules.</li>
-            <li>Optimized legacy code during migration, reducing query response time by 30% with zero downtime.</li>
-          </ul>
-        </article>
 
-        <article class="exp-card reveal">
-          <div class="exp-header">
-            <div class="exp-title-group">
-              <h3>Software Engineer</h3>
-              <div class="company-name">Hatsm Software LLP</div>
+            <div class="exp-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="exp-header">
+                    <div>
+                        <h3 class="exp-title">Software Engineer </h3>
+                        <p class="company-name">Hatsm Software LLP</p>
+                    </div>
+                    <span class="exp-duration">2023 - 2024</span>
+                </div>
+                <ul>
+                    <li>Developed backend modules for multi-store POS system handling concurrent transactions</li>
+                    <li>Enhanced existing PHP/CodeIgniter modules with new features and performance improvements</li>
+                    <li>Conducted code reviews and implemented best practices for team development</li>
+                </ul>
             </div>
-            <div class="exp-meta">
-              <span class="duration">05/2022 — 02/2024</span>
-              <span class="location">Madurai</span>
-            </div>
-          </div>
-          <ul class="exp-list">
-            <li>Maintained and improved web apps in Laravel and CodeIgniter.</li>
-            <li>Built RESTful APIs integrating mobile apps with backend to expand e-commerce functionality.</li>
-            <li>Created scalable mobile apps in Ionic with seamless Laravel connectivity.</li>
-          </ul>
-        </article>
 
-        <article class="exp-card reveal">
-          <div class="exp-header">
-            <div class="exp-title-group">
-              <h3>PHP Programmer</h3>
-              <div class="company-name">Shriyaditha Graphics Universe</div>
+            <div class="exp-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="exp-header">
+                    <div>
+                        <h3 class="exp-title">PHP Programmer</h3>
+                        <p class="company-name">Shriyaditha Graphics Universe</p>
+                    </div>
+                    <span class="exp-duration">2021 - 2023</span>
+                </div>
+                <ul>
+                    <li>Worked on PHP applications and API integrations with payment gateways and shipping providers
+                    </li>
+                    <li>Handled client-side updates and custom feature enhancements for web applications</li>
+                    <li>Collaborated with design team to implement responsive user interfaces</li>
+                </ul>
             </div>
-            <div class="exp-meta">
-              <span class="duration">08/2020 — 05/2022</span>
-              <span class="location">Madurai</span>
-            </div>
-          </div>
-          <ul class="exp-list">
-            <li>Upgraded Core PHP sites (Ram Sethu Travels, Kodaikanal Travels, Jill Jill Jigarthanda).</li>
-            <li>Migrated modules, redesigned controllers/models, improved architecture.</li>
-            <li>Handled Greenbows eCommerce: bug fixes, features, improved API interactions.</li>
-            <li>Integrated third-party APIs and built RESTful services; full-cycle debugging & deployment.</li>
-          </ul>
-        </article>
-      </div>
+        </div>
     </section>
 
-    <section class="section" id="projects">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <article class="project-card reveal">
-          <div class="project-header">
-            <div class="project-icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                <line x1="8" y1="21" x2="16" y2="21"></line>
-                <line x1="12" y1="17" x2="12" y2="21"></line>
-              </svg>
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title"><span class="gradient-text">Technical Skills</span></h2>
+            <p class="section-subtitle">Technologies I work with</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="skill-icon"><i class="bi bi-code-slash"></i></div>
+                <h3 class="skill-title">Backend Development</h3>
+                <p class="skill-list">PHP • Laravel • CodeIgniter • CakePHP • Node.js</p>
             </div>
-            <div class="project-number">01</div>
-          </div>
-          <h3>DiveShop360</h3>
-          <div class="project-subtitle">POS & Inventory Management</div>
-          <p>Index and query optimization on large tables. Enhanced XPanel with CakePHP, optimized joins. POS billing, orders, stock, payments. Angular UI enhancements. Multi-store migration & production support.</p>
-          <div class="project-tags">
-            <span>CakePHP</span>
-            <span>Angular</span>
-            <span>MySQL</span>
-            <span>POS</span>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-header">
-            <div class="project-icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="9" cy="21" r="1"></circle>
-                <circle cx="20" cy="21" r="1"></circle>
-                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-              </svg>
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="skill-icon"><i class="bi bi-database"></i></div>
+                <h3 class="skill-title">Database</h3>
+                <p class="skill-list">MySQL • PostgreSQL • Query Optimization • Data Modeling</p>
             </div>
-            <div class="project-number">02</div>
-          </div>
-          <h3>Nokomis Funshop</h3>
-          <div class="project-subtitle">Multi-Store eCommerce</div>
-          <p>Two WordPress stores managed via Core PHP admin. Product management, inventory, multi-store sync, Amazon/Walmart marketplace integration. Performance, security, and production troubleshooting.</p>
-          <div class="project-tags">
-            <span>WordPress</span>
-            <span>Core PHP</span>
-            <span>APIs</span>
-            <span>eCommerce</span>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-header">
-            <div class="project-icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                <circle cx="9" cy="7" r="4"></circle>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-              </svg>
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+                <div class="skill-icon"><i class="bi bi-grid"></i></div>
+                <h3 class="skill-title">Frontend</h3>
+                <p class="skill-list">Angular • JavaScript • jQuery • HTML/CSS</p>
             </div>
-            <div class="project-number">03</div>
-          </div>
-          <h3>ACHYQ</h3>
-          <div class="project-subtitle">Social Blogging Platform</div>
-          <p>Posts, comments, likes, reposts; relational schema design; Blade, Bootstrap, jQuery. Backend for newsfeed and engagement analytics. AJAX for smooth interactions.</p>
-          <div class="project-tags">
-            <span>Laravel</span>
-            <span>Blade</span>
-            <span>Bootstrap</span>
-            <span>jQuery</span>
-          </div>
-        </article>
-      </div>
+            <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+                <div class="skill-icon"><i class="bi bi-tools"></i></div>
+                <h3 class="skill-title">Tools & Others</h3>
+                <p class="skill-list">Git • Postman • REST APIs • MVC Architecture</p>
+            </div>
+        </div>
     </section>
 
-    <section class="section" id="skills">
-      <h2>Skills</h2>
-      <div class="skill-grid reveal">
-        <div>
-          <h4>Backend</h4>
-          <p>PHP, Laravel, CakePHP, CodeIgniter, REST APIs, Node.js</p>
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title"><span class="gradient-text">Featured Projects</span></h2>
+            <p class="section-subtitle">Key projects I've worked on</p>
         </div>
-        <div>
-          <h4>Frontend</h4>
-          <p>Angular, JavaScript, jQuery, Ajax, Blade</p>
+        <div class="projects-timeline">
+            <div class="timeline-line"></div>
+
+            <div class="project-item" data-aos="fade-left">
+                <div class="timeline-dot"></div>
+                <div class="project-year">2024</div>
+                <div class="project-card">
+                    <h3 class="project-title">DiveShop360 - POS & Inventory System</h3>
+                    <p class="project-description">
+                        Comprehensive point-of-sale and inventory management platform built with CakePHP and Angular.
+                        Enhanced XPanel and POS modules, improved stock workflows, optimized SQL queries for better
+                        performance, upgraded billing system, and successfully supported multi-store data migration for
+                        enterprise clients.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-item" data-aos="fade-left" data-aos-delay="100">
+                <div class="timeline-dot"></div>
+                <div class="project-year">2023</div>
+                <div class="project-card">
+                    <h3 class="project-title">Nokomis Funshop - Multi-Store eCommerce</h3>
+                    <p class="project-description">
+                        Developed a robust multi-store eCommerce platform managing product synchronization across
+                        multiple locations, automated order updates, real-time inventory tracking, and seamless
+                        marketplace integrations. Built with WordPress and core PHP backend for optimal flexibility.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-item" data-aos="fade-left" data-aos-delay="200">
+                <div class="timeline-dot"></div>
+                <div class="project-year">2022</div>
+                <div class="project-card">
+                    <h3 class="project-title">ACHYQ - Social Blogging Platform</h3>
+                    <p class="project-description">
+                        Created an interactive social blogging platform with features for creating posts, user
+                        engagement through likes and comments, and real-time interactions. Implemented using Laravel
+                        Blade templates, Bootstrap for responsive design, and AJAX with jQuery for dynamic content
+                        loading.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div>
-          <h4>Database</h4>
-          <p>MySQL, SQL optimization, Indexing, PostgreSQL</p>
-        </div>
-        <div>
-          <h4>Tools</h4>
-          <p>Git, Postman, Composer, cURL</p>
-        </div>
-        <div>
-          <h4>Web tech</h4>
-          <p>WordPress, Core PHP, REST integrations, AJAX, JSON</p>
-        </div>
-        <div>
-          <h4>Soft skills</h4>
-          <p>Problem-solving, Communication, Collaboration, Adaptability, Time management</p>
-        </div>
-      </div>
     </section>
 
-    <section class="section" id="contact">
-      <h2>Contact</h2>
-      <div class="contact-card reveal">
-        <p><strong>Email:</strong> <a href="mailto:savishnukumar@gmail.com">savishnukumar@gmail.com</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/vishnu-kumar-s-a-05b718216" target="_blank" rel="noopener">vishnu-kumar-s-a-05b718216</a></p>
-        <p><strong>Location:</strong> Madurai, Tamil Nadu</p>
-      </div>
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title"><span class="gradient-text">Get In Touch</span></h2>
+            <p class="section-subtitle">Let's discuss your next project</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-item" data-aos="zoom-in" data-aos-delay="100">
+                <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+                <div class="contact-info">
+                    <strong>Email</strong><br>
+                    <a href="mailto:savishnukumar@gmail.com">savishnukumar@gmail.com</a>
+                </div>
+            </div>
+            <div class="contact-item" data-aos="zoom-in" data-aos-delay="200">
+                <div class="contact-icon"><i class="bi bi-github"></i></div>
+                <div class="contact-info">
+                    <strong>GitHub</strong><br>
+                    <a href="https://github.com/vishnukumarsa" target="_blank"
+                        rel="noopener noreferrer">vishnukumar sa</a>
+                </div>
+            </div>
+            <div class="contact-item" data-aos="zoom-in" data-aos-delay="300">
+                <div class="contact-icon"><i class="bi bi-linkedin"></i></div>
+                <div class="contact-info">
+                    <strong>LinkedIn</strong><br>
+                    <a href="https://linkedin.com/in/vishnu-kumar-s-a-05b718216" target="_blank"
+                        rel="noopener noreferrer">vishnu-kumar-s-a</a>
+                </div>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <p>© <span id="year"></span> Vishnu Kumar S A</p>
-  </footer>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Vishnu Kumar S A. All rights reserved.</p>
+    </footer>
 
-  <script src="script.js"> </script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js">
+       
+    </script>
 </body>
 
 </html>
