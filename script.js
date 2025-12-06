@@ -1,24 +1,60 @@
- document.getElementById('year').textContent = new Date().getFullYear();
+ // Initialize AOS animations
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100,
+            easing: 'ease-in-out'
+        });
 
-    // Staggered scroll animation for cards
-    const observerOptions = {
-      rootMargin: '0px 0px -10% 0px',
-      threshold: 0.15
-    };
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        const themeIcon = themeToggle.querySelector('i');
 
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
+        // Load saved theme
+        if (localStorage.getItem('theme') === 'light') {
+            body.classList.add('light-mode');
+            themeIcon.classList.remove('bi-moon-stars-fill');
+            themeIcon.classList.add('bi-sun-fill');
         }
-      });
-    }, observerOptions);
 
-    // Observe individual cards with staggered delays
-    document.querySelectorAll('.reveal').forEach((el, index) => {
-      el.style.transitionDelay = `${index * 0.15}s`;
-      observer.observe(el);
-    });
+        // Toggle theme on click
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
 
-    // Observe sections separately
-    document.querySelectorAll('.skill-grid').forEach(el => observer.observe(el));
+            if (body.classList.contains('light-mode')) {
+                localStorage.setItem('theme', 'light');
+                themeIcon.classList.remove('bi-moon-stars-fill');
+                themeIcon.classList.add('bi-sun-fill');
+            } else {
+                localStorage.setItem('theme', 'dark');
+                themeIcon.classList.remove('bi-sun-fill');
+                themeIcon.classList.add('bi-moon-stars-fill');
+            }
+        });
+
+        // Smooth scroll for navigation links
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Change navbar style on scroll
+        const nav = document.querySelector('nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.style.background = "rgba(15, 23, 42, 0.95)";
+            } else {
+                nav.style.background = "rgba(15, 23, 42, 0.8)";
+            }
+        });
