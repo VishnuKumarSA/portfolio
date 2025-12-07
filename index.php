@@ -243,7 +243,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Vishnu Kumar S A. All rights reserved.</p>
+        <p>&copy; <?php echo date('Y'); ?> Vishnu Kumar S A. All rights reserved.</p>
     </footer>
 
     <!-- AOS Animation Library -->
@@ -254,3 +254,4 @@
 </body>
 
 </html>
+
